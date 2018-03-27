@@ -1,4 +1,5 @@
-console.log(`が : ${ [... 'が'].length } CodePoints`);
-console.log(`が : ${ [... 'が'].length } CodePoints`);
-console.log(`🏳️‍🌈  : ${ [... '🏳️‍🌈'].length } CodePoints`);
-console.log(`🏴󠁧󠁢󠁳󠁣󠁴󠁿  : ${ [... '🏴󠁧󠁢󠁳󠁣󠁴󠁿'].length } CodePoints`);
+console.log(`\
+が : ${ [... 'が'].length } CodePoints.
+が : ${ [... 'が'].length } CodePoints.
+🏳️‍🌈  : ${ [... '🏳️‍🌈'].length } CodePoints.
+🏴󠁧󠁢󠁳󠁣󠁴󠁿  : ${ [... '🏴󠁧󠁢󠁳󠁣󠁴󠁿'].length } CodePoints.`);

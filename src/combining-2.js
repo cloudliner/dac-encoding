@@ -1,12 +1,14 @@
-console.log(`が : ${ [... 'が'] }`);
-console.log(`が : ${ [... 'が'].length } CodePoints`);
-console.log(`が : ${ 'が'.length } Chars (UTF-16)`);
-console.log(`が : ${ Buffer.byteLength('が', 'utf8') } Bytes (UTF-8)`);
-console.log(`🏳️‍🌈 : ${ [... '🏳️‍🌈'] }`);
-console.log(`🏳️‍🌈 : ${ [... '🏳️‍🌈'].length } CodePoints`);
-console.log(`🏳️‍🌈 : ${ '🏳️‍🌈'.length } Chars (UTF-16)`);
-console.log(`🏳️‍🌈 : ${ Buffer.byteLength('🏳️‍🌈', 'utf8') } Bytes (UTF-8)`);
-console.log(`🏴󠁧󠁢󠁳󠁣󠁴󠁿 : ${ [... '🏴󠁧󠁢󠁳󠁣󠁴󠁿'] }`);
-console.log(`🏴󠁧󠁢󠁳󠁣󠁴󠁿 : ${ [... '🏴󠁧󠁢󠁳󠁣󠁴󠁿'] } CodePoints`);
-console.log(`🏴󠁧󠁢󠁳󠁣󠁴󠁿 : ${ '🏴󠁧󠁢󠁳󠁣󠁴󠁿'.length } Chars (UTF-16)`);
-console.log(`🏴󠁧󠁢󠁳󠁣󠁴󠁿 : ${ Buffer.byteLength('🏴󠁧󠁢󠁳󠁣󠁴󠁿', 'utf8') } Bytes (UTF-8)`);
+const f = require('./format');
+
+console.log(f.format `が : ${ [... 'が'] }`);
+console.log(`が : ${ [... 'が'].length } CodePoints,
+     ${ 'が'.length } Chars (UTF-16),
+     ${ Buffer.byteLength('が', 'utf8') } Bytes (UTF-8)`);
+console.log(f.format `🏳️‍🌈  : ${ [... '🏳️‍🌈'] }`);
+console.log(`🏳️‍🌈  : ${ [... '🏳️‍🌈'].length } CodePoints,
+     ${ '🏳️‍🌈'.length } Chars (UTF-16),
+     ${ Buffer.byteLength('🏳️‍🌈', 'utf8') } Bytes (UTF-8)`);
+console.log(f.format `🏴󠁧󠁢󠁳󠁣󠁴󠁿  : ${ [... '🏴󠁧󠁢󠁳󠁣󠁴󠁿'] }`);
+console.log(`🏴󠁧󠁢󠁳󠁣󠁴󠁿  : ${ [... '🏴󠁧󠁢󠁳󠁣󠁴󠁿'].length } CodePoints,
+     ${ '🏴󠁧󠁢󠁳󠁣󠁴󠁿'.length } Chars (UTF-16),
+     ${ Buffer.byteLength('🏴󠁧󠁢󠁳󠁣󠁴󠁿', 'utf8') } Bytes (UTF-8)`);

@@ -6,4 +6,4 @@ class TextEncoder {
     return new Uint8Array(new Buffer(string, this.encoding));
   }
 }
-module.exports = TextEncoder
+module.exports = TextEncoder;

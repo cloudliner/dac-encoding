@@ -10,4 +10,4 @@ format = (array) => {
   });
   return formatted;
 };
-module.exports = format
+module.exports = format;

@@ -1,9 +1,12 @@
+const TextEncoder = require('./text-encoder');
+const enc = new TextEncoder('utf-8');
+
 console.log(`\
-A : ${ Buffer.byteLength('A', 'utf8') } Bytes.
-1 : ${ Buffer.byteLength('1', 'utf8') } Bytes.
-Å : ${ Buffer.byteLength('Å', 'utf8') } Bytes.
-ԯ : ${ Buffer.byteLength('ԯ', 'utf8') } Bytes.
-あ : ${ Buffer.byteLength('あ', 'utf8') } Bytes.
-漢 : ${ Buffer.byteLength('漢', 'utf8') } Bytes.
-𠘨 : ${ Buffer.byteLength('𠘨', 'utf8') } Bytes.
-🌈 : ${ Buffer.byteLength('🌈', 'utf8') } Bytes.`);
+A : ${ enc.encode('A').byteLength } Bytes.
+1 : ${ enc.encode('1').byteLength } Bytes.
+Å : ${ enc.encode('Å').byteLength } Bytes.
+ԯ : ${ enc.encode('ԯ').byteLength } Bytes.
+あ : ${ enc.encode('あ').byteLength } Bytes.
+漢 : ${ enc.encode('漢').byteLength } Bytes.
+𠘨 : ${ enc.encode('𠘨').byteLength } Bytes.
+🌈 : ${ enc.encode('🌈').byteLength } Bytes.`);

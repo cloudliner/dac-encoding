@@ -1,4 +1,4 @@
-exports.f = (array) => {
+format = (array) => {
   let formatted = '[ ';
   array.forEach((c, index) => {
     formatted = formatted + c;
@@ -10,3 +10,4 @@ exports.f = (array) => {
   });
   return formatted;
 };
+module.exports = format

@@ -7,7 +7,7 @@ $ node src/utf-8.js
 ```sh
 $ node src/utf-16.js
 ```
-## コードポイント数
+## コードポイント数（サロゲートペアを考慮）
 ```sh
 $ node src/codepoint.js
 ```
